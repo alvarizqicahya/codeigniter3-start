@@ -10,7 +10,7 @@ class Auth
 
     function cek()
     {
-        if ($this->_ci->session->userdata('auth') === false) {
+        if ($this->_ci->session->userdata('auth') == false) {
             redirect(base_url('auth/login'));
         }
     }
